@@ -10,9 +10,13 @@ void setup() {
 void draw() {
   background(255);
   
+  strokeWeight(4); 
   for (int i = 0; i < data.size(); i++) {
     point(data.get(i).x, data.get(i).y); 
   }
+  strokeWeight(1);
+  reg.Update(); 
+  reg.DrawLine(); 
 }
 
 void mousePressed() {
