@@ -6,11 +6,13 @@
 
 ArrayList<PVector> data; 
 Regression reg; 
+boolean started; 
 
 void setup() {
   size(500, 500);
   data = new ArrayList<PVector>(); 
   reg = new Regression(); 
+  started = false; 
 }
 
 void draw() {
@@ -23,8 +25,14 @@ void draw() {
   strokeWeight(1);
   reg.LeastSquareRegression(); 
   reg.DrawLine(); 
+  
+  if (!started) { 
+    String text = "Click anywhere to add points!"; 
+    text(text, width / 2 - (textWidth(text)  / 2), height / 2 - (textAscent() + textDescent()) / 2); 
+  }
 }
 
 void mousePressed() {
   data.add(new PVector(mouseX, mouseY)); 
+  started = true; 
 }
