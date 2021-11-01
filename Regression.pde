@@ -29,14 +29,14 @@ class Regression {
     float sumXY = 0, sumX = 0, sumY = 0, sumXSquare = 0; 
     float N = data.size(); 
     
-    for (int i = 0; i < data.size(); i++) {
+    for (int i = 0; i < data.size(); i++) { 
       sumXY += data.get(i).x * data.get(i).y; 
       sumX += data.get(i).x; 
       sumY += data.get(i).y; 
-      sumXSquare += data.get(i).x * data.get(i).x; 
+      sumXSquare += pow(data.get(i).x, 2); 
     }
     
-    slope = (N * sumXY - sumX * sumY) / (N * sumXSquare - sumX * sumX); 
+    slope = (N * sumXY - sumX * sumY) / (N * sumXSquare - pow(sumX, 2)); 
     y_intercept = (sumY - slope * sumX) / N; 
   }
   

@@ -1,13 +1,15 @@
-// https://en.wikipedia.org/wiki/Least_squares
-// https://www.mathsisfun.com/data/least-squares-regression.html
-// https://www.youtube.com/watch?v=Q81RR3yKn30&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=22&ab_channel=StatQuestwithJoshStarmer
+/* 
+ * Created by Emanuel Wiens
+ * Created on: 
+ * Purpose: Least square regression implementation based on https://www.mathsisfun.com/data/least-squares-regression.html. 
+ */
 
-ArrayList<Point> data; 
+ArrayList<PVector> data; 
 Regression reg; 
 
 void setup() {
   size(500, 500);
-  data = new ArrayList<Point>(); 
+  data = new ArrayList<PVector>(); 
   reg = new Regression(); 
 }
 
@@ -24,5 +26,5 @@ void draw() {
 }
 
 void mousePressed() {
-  data.add(new Point(mouseX, mouseY)); 
+  data.add(new PVector(mouseX, mouseY)); 
 }
