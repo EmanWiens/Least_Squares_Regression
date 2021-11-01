@@ -7,4 +7,4 @@ Supplemental sources:
  <br /> 
 
 ### Ridge Regression 
-The next step would be to turn this into Ridge regression! Ridge regression adds a weight to each datapoint and attempts to minimize the mean squared error by putting different weights on different data points. The goal of this strategy is to attempt to mitigate the effect of outliers by giving them a lower weight. See https://towardsdatascience.com/ridge-and-lasso-regression-a-complete-guide-with-python-scikit-learn-e20e34bcbf0b for more information. 
+The next step would be to turn this into Ridge regression! The goal of this strategy is to attempt to mitigate the effect of outliers by adjusting the way that the regression is calculated. See https://towardsdatascience.com/ridge-and-lasso-regression-a-complete-guide-with-python-scikit-learn-e20e34bcbf0b for more information. 
