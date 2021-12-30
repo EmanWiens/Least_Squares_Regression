@@ -10,3 +10,8 @@ Supplemental sources:
 
 ### Ridge Regression 
 The next step would be to turn this into Ridge regression! The goal of this strategy is to attempt to mitigate the effect of outliers by adjusting the way that the regression is calculated. See https://towardsdatascience.com/ridge-and-lasso-regression-a-complete-guide-with-python-scikit-learn-e20e34bcbf0b for more information. 
+
+### How to use the program 
+- Download processing. 
+- Open and run the code in processing. 
+- Once the code is running click on the canvas to create a point. 
